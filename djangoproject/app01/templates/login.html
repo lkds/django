@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css'%}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+
+<body>
+    <div>
+        <form action="/loginres/">
+            <h1>Bolg在线个人博客</h1>
+            <input type="text" placeholder="请输入登录账号" name="account">
+            <input type="password" placeholder="请输入登录密码" name="password">
+            <input type="button" type="submit" value="马上登录">
+            <a href="../register">立即注册</a>
+        </form>
+    </div>
+</body>
+
+</html>

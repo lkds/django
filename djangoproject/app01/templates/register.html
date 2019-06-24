@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css'%}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+</head>
+
+<body>
+    <div>
+        <form action="/registerres/">
+            <h1>注册</h1><span>register</span>
+            登陆账号：<input type="text" placeholder="电子邮箱/手机号码" name="acount">
+            登陆密码：<input type="password" placeholder="请输入不少于6位的字符" name="password ">
+            密码确认：<input type="password" placeholder="请再次输入密码" name="cofirmpass">
+            用户昵称：<input type="text" placeholder="请输入不少于6位字符" name="nickname"><a href=#>唯一验证</a>
+            用户头像：<img src="{% static 'img/avtar.jpg' %}" />
+            用户性别：<input type="radio" name="gender" value="male" checked="checked">男<br>
+            <input type="radio" name="gender" value="female">女<br>
+            所在城市：<select name="city">
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+                <option value="shenzhen">深圳</option>
+                <option value="chongqing">重庆</option>
+                <option value="chengdu">成都</option>
+            </select>
+            个性签名：<input type="text" placeholder="请输入不大于30个字" name="motto"/>
+            <input type="submit" value="立即注册" /><a href="..\login">返回登录</a>
+        </form>
+    </div>
+</body>
+
+</html>
